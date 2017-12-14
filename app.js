@@ -19,15 +19,15 @@ var  commentRoutes    =    require("./routes/comments"),
 
 
 mongoose.connect(process.env.DATABASEURL);
-// mongoose.connect("mongodb://localhost/yelp_camp");
 
-var promise = mongoose.connect("mongodb://enoch:enocholas96@ds137206.mlab.com:37206/yelpcampdemo", {
-  useMongoClient: true,
-});
 
-promise.then(function(seedDB) {
-  seedDB();
-});
+// var promise = mongoose.connect("mongodb://enoch:enocholas96@ds137206.mlab.com:37206/yelpcampdemo", {
+//  useMongoClient: true,
+// });
+
+// promise.then(function(seedDB) {
+ // seedDB();
+// });
 
 // mongoose.connect("mongodb:enoch:enocholas96@ds137206.mlab.com:37206/yelpcampdemo");
 
